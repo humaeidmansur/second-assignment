@@ -1,0 +1,86 @@
+*{
+   
+    box-sizing:border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+                          
+                           /* Google FONT */
+                            
+ /* 
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-weight: 22;
+}                          
+
+.noto-serif-font{
+  font-family: "Noto Serif", serif;
+  font-weight: 500;
+}
+*/
+                             /*Display FLEX*/
+.flexy{
+    display:flex;
+}
+
+                            /*Nav Bar Logo*/
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;        /*<<<<<<<<<<< WIDTH >>>>>>*/
+    margin: 0 auto;
+    
+}
+
+.logo{
+
+width: 80px;
+height: 40px;
+}
+
+                            
+
+                             /*Random Styles*/
+
+.black ,.nav-link, .bold{
+    color:#252432;
+}                            
+
+.cart-icon{
+    width:5px;
+    height: 6px;
+    
+}
+.nav-items{
+    gap:2px;
+}
+.menu-bar{
+    gap:10px;
+    font-family: "Inter", sans-serif;
+    font-size: 5px;
+}
+
+ 
+.bold{
+ font-weight:600;
+}
+     
+
+.hide{
+    display:block;
+}
+
+
+      /*Responsive Design*/
+
+  /*small device*/
+  
+  @media screen and (max-width: 576px) {
+
+ 
+.hide {
+    display: none;
+}
+  }
