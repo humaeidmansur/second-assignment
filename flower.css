@@ -15,9 +15,10 @@
   font-weight: 22;
 }                          
 
-.noto-serif ,.lover-title ,.discount-title{
+.noto-serif ,.lover-title ,.discount-title ,.title{
   font-family: "Noto Serif", serif;
   font-weight: 700;
+  font-size: 30px;
 }
 
                              /*COMMON Style*/
@@ -158,7 +159,8 @@ height: 100px;
 .buy{
     color:white;
     background-color:#E95A08;
-    padding: 18px 80px;
+    padding: 18px 90px;
+    border:none;
 }
 
 
@@ -166,9 +168,51 @@ height: 100px;
 
 .section-two{
     margin-top: 300px;
-    flex-direction: row;
-    
+    display: flex;
+
 }
+
+.lover-content,.circle{
+    margin-right:50px;
+    font-size:25px;
+}
+   
+.badge-img{
+    width:286px;
+    height:286px;
+  }
+
+           /* Short Challenge */
+
+
+
+  
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+ 
+
+.badge-img {
+  animation:spin 2s linear infinite;
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+
+
+ .lover-img{
+    margin-bottom: -450px;
+  }  
+ .badge-img{
+    margin-top: -860px;
+    margin-left: 380px;
+    box-shadow: rgba(0, 0, 0, 0.25);
+ }
+
 
 .section-three{
 
@@ -178,11 +222,7 @@ height: 100px;
     margin-top: 250px;
 }
 
-.lover-content,.circle{
-    margin-right:50px;
-    font-size:25px;
-}
-              
+    
                 /*<!--Discount Garden Style-->*/
 
 .discount-container {
@@ -195,7 +235,7 @@ border-radius: 20px;
 
 }
 
-.column1{
+.left-two-picture{
 display: flex;
 flex-direction: column;
 gap:20px;
@@ -243,8 +283,77 @@ gap:20px;
     padding-left:-4px;
 }
 
+                    /*input type SUBSCRIBE bar design*/
+
+ 
+
+/* Main section styling */
+.form-box {
+  background: url(assets/news-letter-bg.png);
+  min-height: 500px; /* Full screen height */
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+/* Heading */
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+
+}
+
+/* Search bar container */
+.search-bar {
+  width: 700px;
+  display: flex;
+}
+
+.search-bar input {
+    width: 100%;
+}
+
+/* Email input */
+.address {
+  flex: 1;
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+/* Subscribe button */
+.subscribe {
+  background: #ff6f4a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe:hover {
+  background: #ff4a1c;
+}
+
+ 
 
 
+
+
+
+ 
+
+ 
+ 
                                   /*IMAGES Style*/
 
   .flower-one{
@@ -259,18 +368,52 @@ gap:20px;
   }
                                  /*Lover content*/
 
-  .badge-img{
-    width:286px;
-    height:286px;
-  }
-  .lover-img{
-    margin-bottom: -450px;
-  }  
- .badge-img{
-    margin-top: -860px;
-    margin-left: 380px;
-    box-shadow: rgba(0, 0, 0, 0.25);
+  
+
+                   /*FOOTER Style*/
+
+ .footer{
+    margin-top: 50px;
+    padding: 20px;
+ } 
+ .footer-left{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
  }
+   
+
+    .f-link{
+    display: flex;
+    grid-column: 2;
+    
+    gap: 170px;
+
+    }
+ 
+.f-link li{
+    margin-bottom:30px;
+    list-style:none;
+}
+
+.f-icon{
+display: flex;
+gap:20px;
+
+}
+
+
+.f-icon img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
                   /*Responsive Design*/
 
 .hide{
@@ -295,12 +438,24 @@ gap:20px;
     align-items:flex-start;
 }
 .section-two{
-    flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column;
+    margin-right:-50px;
+}
+ 
+.section-three{
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-left: 40px; */
 }
 
+
 .lover-img{
-    width:100%;
+    width:350px;
     height:100%;
+    margin-bottom: 20px;
 }
 .banner-content {
     text-align:left;
@@ -318,6 +473,7 @@ gap:20px;
     grid-template-columns: repeat(2, 1fr);
     gap:50px;
     margin-top:40px;
+    width:350px;
 }
  
 
@@ -332,10 +488,7 @@ gap:20px;
     font-size: 10px;
 }
 
-.section-three{
-    margin-top: 600px;
-}
-
+ 
 .discount-container{
     grid-template-columns: 1fr;
     gap:10px;
@@ -346,7 +499,7 @@ gap:20px;
     background-image: url(assets/deal-zabo.png);
     background-repeat: no-repeat;
     color:white;
-    width:400px;
+    width:350px;
     height:203px;
     background-size:cover;
     border-radius: 20px;
@@ -356,7 +509,90 @@ gap:20px;
     margin-top:10px;
 
 }
+.flower-garden2{
+  width:350px;
+  height:203px;  
+}
+.flower-garden1{
+  width:350px;
+  height:203px;  
+}
+
+
+
+                /* Subscribe Btn Design */
+
+ .title {
+    font-size: 20px;
+  }
+  .form-box{
+    width: 350px;
+    background-size: cover;
+    /* margin-left: 40px; */
+  }
+
+  .search-bar {
+     
+    width: 100%;
+    display: flex;
+
+    
+  }
+
+  .search-bar input {
+    height:35px;
+    border: none;
+}
+
+  .search-bar button {
+     
+      padding: 10px 15px;
+      height:35px;
+    
+
+  }
+
+
+
+                        /*Footer*/
 
  
+ .footer{
+    margin-left: 20px;
+    margin-top: 50px;
+    padding: 0px;
+ } 
+ .footer-left{
+    display: flex;
+    flex-direction: column;
+ }
+   
 
+    .f-link{
+    display: grid;
+    grid-column: 1; 
+    gap:0px            
+    }
+     
+ 
+
+    .f-link ul{
+        margin: 0;
+        padding: 0;
+        
+    }
+ 
+
+
+.f-icon{
+display: flex;
+gap:20px;
+
+}
+
+
+.f-icon img{
+    width: 30px;
+    height: 30px;
+}
   }
